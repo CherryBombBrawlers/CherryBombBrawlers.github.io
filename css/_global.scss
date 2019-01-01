@@ -6,3 +6,28 @@ body {
     font-family: $body-font;
     font-size: 16px;
 }
+
+body .dark-bg {
+    color: $white;
+    
+    .ui.table,
+    .ui.table thead th {
+        color: $white;
+    }
+    
+    .ui.table th {
+        border-bottom: 2px solid $white;
+    }
+    
+    .ui.table tr:not(:last-child) td {
+        border-bottom: 1px solid $white;
+    }
+}
+
+.ui.form .field {
+    margin: 0 0 1.75em;
+}
+
+input::placeholder {
+    color: #888;
+}
